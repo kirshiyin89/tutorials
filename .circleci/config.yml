@@ -22,6 +22,7 @@ jobs:
       - run:
           name: Test
           command: mvn test
+      - store_test_results     
 
 workflows:
   # Below is the definition of your workflow.
