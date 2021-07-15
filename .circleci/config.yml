@@ -55,6 +55,6 @@ workflows:
           cron: "* * * * *" 
           filters:
             branches:
-              only: /.*/
+              only: /^dev.*/
     jobs:
       - build
