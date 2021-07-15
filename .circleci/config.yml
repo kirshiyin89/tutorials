@@ -33,3 +33,7 @@ workflows:
   sample: 
     jobs:
       - build-and-test
+schedule-wf:
+      triggers:
+      - schedule:
+          cron: "* 1 * * *"  
