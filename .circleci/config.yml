@@ -55,6 +55,6 @@ workflows:
           cron: "* * * * *" 
           filters:
             branches:
-              only: /^circle-project.*/
+              only: /.*/
     jobs:
       - build
