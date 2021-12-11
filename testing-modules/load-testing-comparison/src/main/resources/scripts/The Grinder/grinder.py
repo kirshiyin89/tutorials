@@ -8,8 +8,7 @@ def parseJsonString(json, element):
   for x in json.split(","):
     pc = x.replace('"','').split(":")
     if pc[0].replace("{","") == element:
-      ele = pc[1].replace("}","")
-      return ele
+      return pc[1].replace("}","")
     else:
       return ""
 
